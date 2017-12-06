@@ -1,0 +1,8 @@
+{
+  "name": "munich-voter-turnout",
+  "description": "Voter turnout in Munich, Germany visualized with D3.js",
+  "repository": "https://github.com/mrP0tat0Head/mvt",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}

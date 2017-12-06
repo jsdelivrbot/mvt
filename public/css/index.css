@@ -1,0 +1,8 @@
+div {
+    fill: #459FA1
+}
+
+.district:hover {
+    fill: #AABBCC;
+    cursor: pointer;
+}
