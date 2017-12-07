@@ -1,13 +1,12 @@
+var voter_data = {};
+var year       = 2002;
+
 (function() {
     'use strict';
-
     var init = function() {
         // params
         let width = 700;
         let height = 600;
-
-var path = d3.geoPath().projection(projection);
-
 
         var projection = d3.geoMercator()
             .scale(140000)
@@ -47,7 +46,6 @@ var path = d3.geoPath().projection(projection);
         }
 
         d3.json("/public/data/munich.geojson", function (error, mapData) {
-            console.table(mapData);
 
             var features = mapData.features;
 
@@ -78,15 +76,30 @@ var path = d3.geoPath().projection(projection);
         //init slider
         var slider2 = new rSlider({
             target: '#slider',
-            values: [2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015],
+            values: [2002, 2003, 2004, 2005, 2008, 2009],
             range: false,
             set: [5],
             tooltip: false,
-            onChange: function(vals) {
-                console.log(vals);
+            onChange: function(value) {
+                year = value;
+                update_voter_map(year, voter_data);
+                //console.log(voter_data[year]["Au"])
             },
             width: "600"
         });
+        
+
+        d3.json("/public/data/voter_turnout.json", function (error, data) {
+            jQuery.extend(voter_data, data);
+            update_voter_map(year, voter_data)
+        });
+
+        // for (var i = 1; i < 29; i++) {
+
+        //     var district = document.getElementById((i).toString());
+        //     district.style.fill = get_heatmap_color(voter_data["2002"]["Au"]);
+        // }
+
     };
     window.onload = init;
 })();
