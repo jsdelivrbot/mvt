@@ -2,6 +2,8 @@
 
 div#map-container > svg#svg-map > g > path.district {
     fill: #56768F;
+    stroke: black;
+    stroke-width: 3px;
 }
 
 div#map-container > svg#svg-map > g > path.district:hover {
