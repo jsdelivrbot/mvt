@@ -1,0 +1,10 @@
+/* This stylesheet styles the interactions of the svg-map*/
+
+div#map-container > svg#svg-map > g > path.district {
+    fill: #56768F;
+}
+
+div#map-container > svg#svg-map > g > path.district:hover {
+    fill: #AABBCC;
+    cursor: pointer;
+}

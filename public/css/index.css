@@ -1,8 +1,46 @@
-div {
-    fill: #459FA1
+/* This is the main stylesheet for the global alignment und colors*/
+
+html {
+    height: 100%;
 }
 
-.district:hover {
-    fill: #AABBCC;
-    cursor: pointer;
+body {
+    background-color: #d7e5ea;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+div#content {
+    margin: 1%;
+    display: flex;
+    flex-flow: column;
+    flex: 0 1 100%;
+}
+
+div#header {
+    /*background-color: #eed896;*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex: 0 1 10%;
+
+}
+
+div#map-container {
+    /*background-color: #97e1b3;*/
+    padding: 1%;
+    display: flex;
+    flex: 0 1 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+div#footer {
+    /*background-color: #8ec0d8;*/
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex: 0 1 10%;
 }
