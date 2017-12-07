@@ -44,3 +44,7 @@ div#footer {
     display: flex;
     flex: 0 1 10%;
 }
+
+.slider-container{
+    padding-top: 2%;
+}
