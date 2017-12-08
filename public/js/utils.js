@@ -4,11 +4,12 @@
 // returns a valid hex color
 function get_heatmap_color(percentage_float) {
     if (percentage_float != undefined) {
-        let colors = ["#f9e0e9", "#ffb5d1", "#f97cac", "#f44789", "#db1360", "#c7044f", "#a70241", "#810434", "#560223", "#42011b"];
+        // let colors = ["#f9e0e9", "#ffb5d1", "#f97cac", "#f44789", "#db1360", "#c7044f", "#a70241", "#810434", "#560223", "#42011b"];
+        let colors = ["#ffffcc", "#ffeda0", "#fed976", "#feb24c", "#fd8d3c", "#fc4e2a", "#e31a1c", "#bd0026", "#800026", "#4f0018"];
         let index = Math.max(0, Math.round(percentage_float / 10) - 1);
         return colors[index];
     } else {
-       return "#848484";
+       return "#eeeeee";
     }
 }
     

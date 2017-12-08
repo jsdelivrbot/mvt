@@ -23,6 +23,7 @@ var year       = 2002;
 
         function show_tooltip() {
             var district_name = $(this).data("name");
+            $("#district-name-box").html(district_name)
             console.log(district_name);
         }
 
@@ -76,7 +77,7 @@ var year       = 2002;
         //init slider
         var slider2 = new rSlider({
             target: '#slider',
-            values: [2002, 2003, 2004, 2005, 2008, 2009],
+            values: [2002, 2003, 2005, 2008, 2009],
             range: false,
             set: [5],
             tooltip: false,
@@ -93,12 +94,6 @@ var year       = 2002;
             jQuery.extend(voter_data, data);
             update_voter_map(year, voter_data)
         });
-
-        // for (var i = 1; i < 29; i++) {
-
-        //     var district = document.getElementById((i).toString());
-        //     district.style.fill = get_heatmap_color(voter_data["2002"]["Au"]);
-        // }
 
     };
     window.onload = init;
