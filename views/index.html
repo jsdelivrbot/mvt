@@ -5,12 +5,20 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>munich voter turnout</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/app.css">
     <link rel="stylesheet" type="text/css" href="/public/css/rSlider.min.css">
     <link rel="stylesheet" type="text/css" href="/public/css/svg-map.css">
     <link rel="stylesheet" type="text/css" href="/public/css/index.css">
 </head>
 
 <body>
+    <div class="tooltip"></div>
+    <div class="large reveal" id="exampleModal" data-reveal>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
     <div id="content">
         <div id="header">
             <span>This is a header</span>
@@ -23,7 +31,10 @@
         </div>
     </div>
     <script type="text/javascript" src="/public/js/vendor/jquery.js"></script>
-    <script type="text/javascript" src="/public/js/vendor/d3.min.js"></script>
+    <script type="text/javascript" src="/public/js/vendor/what-input.js"></script>
+    <script type="text/javascript" src="/public/js/vendor/foundation.js"></script>
+    <script type="text/javascript" src="/public/js/app.js"></script>
+    <script type="text/javascript" src="/public/js/vendor/d3.v3.min.js"></script>
     <script type="text/javascript" src="/public/js/vendor/d3-geo.min.js"></script>
     <script type="text/javascript" src="/public/js/vendor/rSlider.min.js"></script>
     <script type="text/javascript" src="/public/js/index.js"></script>
