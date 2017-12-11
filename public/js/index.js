@@ -1,8 +1,9 @@
 var selected_districts = [];
+var voter_data = {};
+var year       = 2002;
 
 (function() {
     'use strict';
-
     var init = function() {
         // params
         let width = 700;
@@ -29,6 +30,8 @@ var selected_districts = [];
                 .css("left", d3.event.pageX + "px")
                 .css("top", (d3.event.pageY - 28) + "px")
                 .show();
+            $("#district-name-box").html(district_name)
+            console.log(district_name);
         }
 
         function add_district() {
@@ -69,12 +72,14 @@ var selected_districts = [];
         //init slider
         var slider = new rSlider({
             target: '#slider',
-            values: [2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015],
+            values: [2002, 2003, 2005, 2008, 2009],
             range: false,
             set: [5],
             tooltip: false,
-            onChange: function(vals) {
-                console.log(vals);
+            onChange: function(value) {
+                year = value;
+                update_voter_map(year, voter_data);
+                //console.log(voter_data[year]["Au"])
             },
             width: "600"
         });
@@ -152,6 +157,11 @@ var selected_districts = [];
                 return d;
             }
         }
+
+        d3.json("/public/data/voter_turnout.json", function (error, data) {
+            jQuery.extend(voter_data, data);
+            update_voter_map(year, voter_data)
+        });
     };
     window.onload = init;
 })();
