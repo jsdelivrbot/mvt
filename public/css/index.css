@@ -19,7 +19,7 @@ div#content {
     flex: 0 1 100%;
 }
 
-div#header {
+div.header {
     /*background-color: #eed896;*/
     display: flex;
     align-content: center;
@@ -37,7 +37,7 @@ p#district-name-box {
     text-transform: uppercase;
 }
 
-div#map-container {
+div.content-main {
     /*background-color: #97e1b3;*/
     padding: 1%;
     display: flex;
@@ -46,16 +46,20 @@ div#map-container {
     justify-content: center;
 }
 
-div#footer {
+div.footer {
     /*background-color: #8ec0d8;*/
     align-content: center;
     justify-content: center;
     display: flex;
-    flex: 0 1 10%;
+    flex: 1 1 10%;
+    flex-flow: column;
 }
 
 .slider-container {
     padding-top: 2%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 div.tooltip {
@@ -95,4 +99,11 @@ div.tooltip {
     fill: none;
     stroke: #000;
     shape-rendering: crispEdges;
+}
+
+#play-button {
+    margin: 0 auto;
+    display: block;
+    width: 3%;
+    cursor: pointer;
 }

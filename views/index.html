@@ -18,16 +18,26 @@
         <button class="close-button" data-close aria-label="Close reveal" type="button">
             <span aria-hidden="true">&times;</span>
         </button>
+        <div class="header" id="header-modal">
+            <h4 id="title-modal"></h4>
+        </div>
+        <div class="content-main" id="content-main-modal"></div>
+        <div class="footer" id="footer-modal">
+            <div class="slider-container">
+                <input type="text" id="slider2" class="range-slider" />
+            </div>
+        </div>
     </div>
     <div id="content">
-        <div id="header">
-        <p id="district-name-box"></p>
+        <div class="header" id="header-main">
+            <p id="district-name-box"></p>
         </div>
-        <div id="map-container"></div>
-        <div id="footer">
-            <div class="slider-container">
+        <div class="content-main" id="map-container"></div>
+        <div class="footer" id="footer-main">
+            <div class="slider-container clearfix">
                 <input type="text" id="slider" class="range-slider" />
             </div>
+            <img id="play-button" src="/public/images/play-button.svg">
         </div>
     </div>
     <script type="text/javascript" src="/public/js/vendor/jquery.js"></script>

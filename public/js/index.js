@@ -1,9 +1,11 @@
 var selected_districts = [];
 var voter_data = {};
-var year       = 2002;
+var year = 2002;
+var slider_modal = {};
+var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
 
 (function() {
-    'use strict';
+    "use strict";
     var init = function() {
         // params
         let width = 700;
@@ -44,7 +46,7 @@ var year       = 2002;
         }
 
         function open_delayed_modal() {
-            $('#exampleModal').foundation('open');
+            $("#exampleModal").foundation("open");
         }
 
         function add_district_name(element_clicked, new_text) {
@@ -71,10 +73,10 @@ var year       = 2002;
 
         //init slider
         var slider = new rSlider({
-            target: '#slider',
+            target: "#slider",
             values: [2002, 2003, 2005, 2008, 2009],
             range: false,
-            set: [5],
+            set: [2003],
             tooltip: false,
             onChange: function(value) {
                 year = value;
@@ -85,22 +87,26 @@ var year       = 2002;
         });
 
         //clear selected districts from list
-        $('#exampleModal').bind('closed.zf.reveal', clear_state);
+        $("#exampleModal").bind("closed.zf.reveal", clear_state);
         //open new diagramm in modal
         $('#exampleModal').bind('open.zf.reveal', show_chart_in_modal);
 
         function clear_state() {
-            //mark borders of selected district
-            selected_districts.forEach(function(district) {
-                $(district).css("stroke", "black");
-            });
+            //reset borders of selected districts
+            selected_districts.forEach(district => { $(district).css("stroke", "black") });
             selected_districts = [];
 
             //remove unused chart in modal
             d3.select(".modalChart").remove("svg");
+
+            //remove slider
+            slider_modal.destroy();
         }
 
         function show_chart_in_modal() {
+            set_modal_title();
+
+
             var margin = { top: 20, right: 30, bottom: 40, left: 30 },
                 width = 960 - margin.left - margin.right,
                 height = 500 - margin.top - margin.bottom;
@@ -121,7 +127,7 @@ var year       = 2002;
                 .tickSize(0)
                 .tickPadding(6);
 
-            var svg = d3.select("#exampleModal").append("svg")
+            var svg = d3.select("#content-main-modal").append("svg")
                 .attr("class", "modalChart")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
@@ -134,16 +140,16 @@ var year       = 2002;
                     return;
                 }
 
-                x.domain(d3.extent(data, function(d) { return d.value; })).nice();
-                y.domain(data.map(function(d) { return d.name; }));
+                x.domain(d3.extent(data, d => { return d.value; })).nice();
+                y.domain(data.map(d => { return d.name; }));
 
                 svg.selectAll(".bar")
                     .data(data)
                     .enter().append("rect")
-                    .attr("class", function(d) { return "bar bar--" + (d.value < 0 ? "negative" : "positive"); })
-                    .attr("x", function(d) { return x(Math.min(0, d.value)); })
-                    .attr("y", function(d) { return y(d.name); })
-                    .attr("width", function(d) { return Math.abs(x(d.value) - x(0)); })
+                    .attr("class", d => { return "bar bar--" + (d.value < 0 ? "negative" : "positive") })
+                    .attr("x", d => { return x(Math.min(0, d.value)) })
+                    .attr("y", d => { return y(d.name) })
+                    .attr("width", d => { return Math.abs(x(d.value) - x(0)) })
                     .attr("height", y.rangeBand());
 
                 svg.append("g")
@@ -158,7 +164,14 @@ var year       = 2002;
             }
         }
 
-        d3.json("/public/data/voter_turnout.json", function (error, data) {
+        function set_modal_title() {
+            var district_one = $(selected_districts[0]).attr("title"),
+                district_two = $(selected_districts[1]).attr("title");
+
+            $("#title-modal").text(`${district_one} vs ${district_two}`);
+        }
+
+        d3.json("/public/data/voter_turnout.json", function(error, data) {
             jQuery.extend(voter_data, data);
             update_voter_map(year, voter_data)
         });
