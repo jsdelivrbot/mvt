@@ -1,8 +1,39 @@
-var selected_districts = [];
-var voter_data = {};
-var year = 2002;
-var slider_modal = {};
-var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
+var selected_districts = [],
+    voter_data = {},
+    year = 2002,
+    slider_main = {},
+    slider_modal = {},
+    slider_main_active = false,
+    slider_modal_active = false;
+
+var bar_chart_data = {
+    "2002": [{
+            "name": "A",
+            "value": -15
+        },
+        {
+            "name": "B",
+            "value": 20
+        },
+        {
+            "name": "C",
+            "value": -22
+        }
+    ],
+    "2003": [{
+            "name": "A",
+            "value": -10
+        },
+        {
+            "name": "B",
+            "value": 7
+        },
+        {
+            "name": "C",
+            "value": 22
+        }
+    ]
+};
 
 (function() {
     "use strict";
@@ -33,7 +64,6 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
                 .css("top", (d3.event.pageY - 28) + "px")
                 .show();
             $("#district-name-box").html(district_name)
-            console.log(district_name);
         }
 
         function add_district() {
@@ -72,16 +102,15 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
         });
 
         //init slider
-        var slider = new rSlider({
-            target: "#slider",
+        slider_main = new rSlider({
+            target: "#slider-main",
             values: [2002, 2003, 2005, 2008, 2009],
             range: false,
-            set: [2003],
+            set: [2002],
             tooltip: false,
-            onChange: function(value) {
+            onChange: value => {
                 year = value;
                 update_voter_map(year, voter_data);
-                //console.log(voter_data[year]["Au"])
             },
             width: "600"
         });
@@ -89,7 +118,39 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
         //clear selected districts from list
         $("#exampleModal").bind("closed.zf.reveal", clear_state);
         //open new diagramm in modal
-        $('#exampleModal').bind('open.zf.reveal', show_chart_in_modal);
+        $("#exampleModal").bind("open.zf.reveal", show_chart_in_modal);
+        //start the main time slider
+        $("#footer-main > #play-button-main")
+            .bind("click", change_slider.bind(null, slider_main, slider_main_active));
+
+        //changes the position of the slider, and stops after reached end_position
+        function change_slider(slider, slider_active) {
+            var current_value = parseInt(slider.getValue()),
+                current_position = slider.conf.values.indexOf(current_value),
+                end_position = slider.conf.values.length - 1;
+
+            if (!slider_active) {
+                //slider is not active, reset year an start auto play
+                var new_position = slider.getValue(),
+                    start = slider.conf.values[new_position];
+
+                slider.setValues(start);
+                slider_active = true;
+                setTimeout(change_slider.bind(null, slider, slider_active), 1000);
+            } else if (slider_active && current_position < end_position) {
+                //slider is active and not at end position, go on
+
+                var first_value = 0,
+                    new_position = current_position + 1,
+                    start = slider.conf.values[first_value],
+                    end = slider.conf.values[new_position];
+                slider.setValues(start, end);
+                setTimeout(change_slider.bind(null, slider, slider_active), 1000);
+            } else if (slider_active && current_position === end_position) {
+                //slider reached end position disable autoplay
+                slider_active = false;
+            }
+        }
 
         function clear_state() {
             //reset borders of selected districts
@@ -99,14 +160,14 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
             //remove unused chart in modal
             d3.select(".modalChart").remove("svg");
 
+            //unbound click event, otherwise change_slider would be called multiple times
+            $("#footer-modal > #play-button-modal").bind("click", change_slider);
+
             //remove slider
             slider_modal.destroy();
         }
 
-        function show_chart_in_modal() {
-            set_modal_title();
-
-
+        function create_bar_chart(data) {
             var margin = { top: 20, right: 30, bottom: 40, left: 30 },
                 width = 960 - margin.left - margin.right,
                 height = 500 - margin.top - margin.bottom;
@@ -134,34 +195,54 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
                 .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-            d3.tsv("/public/data/data.tsv", type, function(error, data) {
-                if (error) {
-                    console.log("could not load data.tsv");
-                    return;
-                }
+            x.domain(d3.extent(data, function(d) { return d.value; })).nice();
+            y.domain(data.map(function(d) { return d.name; }));
 
-                x.domain(d3.extent(data, d => { return d.value; })).nice();
-                y.domain(data.map(d => { return d.name; }));
+            svg.selectAll(".bar")
+                .data(data)
+                .enter().append("rect")
+                .attr("class", function(d) { return "bar bar--" + (d.value < 0 ? "negative" : "positive"); })
+                .attr("x", function(d) { return x(Math.min(0, d.value)); })
+                .attr("y", function(d) { return y(d.name); })
+                .attr("width", function(d) { return Math.abs(x(d.value) - x(0)); })
+                .attr("height", y.rangeBand());
 
-                svg.selectAll(".bar")
-                    .data(data)
-                    .enter().append("rect")
-                    .attr("class", d => { return "bar bar--" + (d.value < 0 ? "negative" : "positive") })
-                    .attr("x", d => { return x(Math.min(0, d.value)) })
-                    .attr("y", d => { return y(d.name) })
-                    .attr("width", d => { return Math.abs(x(d.value) - x(0)) })
-                    .attr("height", y.rangeBand());
-
-                svg.append("g")
-                    .attr("class", "y axis")
-                    .attr("transform", "translate(" + x(0) + ",0)")
-                    .call(yAxis);
-            });
+            svg.append("g")
+                .attr("class", "y axis")
+                .attr("transform", "translate(" + x(0) + ",0)")
+                .call(yAxis);
 
             function type(d) {
                 d.value = +d.value;
                 return d;
             }
+        }
+
+        function show_chart_in_modal() {
+            set_modal_title();
+            create_bar_chart(bar_chart_data["2002"]);
+
+
+            //javascript deep copy, because references won't stay alive
+            var my_modal = new rSlider({
+                target: "#slider-modal",
+                values: [2002, 2003, 2005, 2008, 2009],
+                range: false,
+                set: [2002],
+                tooltip: false,
+                onChange: function(value) {
+                    year = value;
+                    create_bar_chart(bar_chart_data[year]);
+                },
+                width: "600"
+            });
+
+            jQuery.extend(
+                slider_modal,
+                my_modal
+            );
+            $("#footer-modal > #play-button-modal")
+                .bind("click", change_slider.bind(null, slider_modal, slider_modal_active));
         }
 
         function set_modal_title() {
