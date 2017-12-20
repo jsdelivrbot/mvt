@@ -108,7 +108,18 @@ function create_district_summary(district_A, district_B, mean_age, residents, un
     return return_array;
 }
 
-
+// this is triggered on mouseover in the modal boxplot
+function show_feature_percentage()
+{
+    let factor_str = $(this).attr("value");
+    let percentage_float = Math.abs(100 * parseFloat(factor_str.slice(0,5))).toFixed(2)
+    let tooltip = `${percentage_float}%`
+    $(".tooltip")
+        .html(tooltip)
+        .css("left", d3.event.pageX + "px")
+        .css("top", (d3.event.pageY - 28) + "px")
+        .show();
+}
 
 
 
