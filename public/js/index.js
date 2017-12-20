@@ -193,6 +193,9 @@ var bar_chart_data = {
                 .tickSize(0)
                 .tickPadding(6);
 
+            //remove old svg bar chart
+            d3.select("#content-main-modal").selectAll("svg").remove();
+
             var svg = d3.select("#content-main-modal").append("svg")
                 .attr("class", "modalChart")
                 .attr("width", width + margin.left + margin.right)
