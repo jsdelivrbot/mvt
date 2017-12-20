@@ -169,6 +169,9 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
                 .tickSize(0)
                 .tickPadding(6);
 
+            //remove old svg bar chart
+            d3.select("#content-main-modal").selectAll("svg").remove();
+
             var svg = d3.select("#content-main-modal").append("svg")
                 .attr("class", "modalChart")
                 .attr("width", width + margin.left + margin.right)
