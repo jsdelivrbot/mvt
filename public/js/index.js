@@ -67,12 +67,17 @@ var bar_chart_data = {
         }
 
         function add_district() {
-            selected_districts.push(this);
+            //disallow to select the same district twice
+            if (selected_districts.indexOf(this) === -1) {
+                selected_districts.push(this);
 
-            //mark borders of selected district
-            $(this).css("stroke", "green");
+                //mark borders of selected district
+                $(this).css("stroke", "green");
 
-            if (selected_districts.length == 2) window.setTimeout(open_delayed_modal, 200);
+                if (selected_districts.length == 2) window.setTimeout(open_delayed_modal, 200);
+            } else {
+                return;
+            }
         }
 
         function open_delayed_modal() {
