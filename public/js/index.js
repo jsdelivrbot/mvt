@@ -1,8 +1,11 @@
 var selected_districts = [];
 var voter_data = {};
-var year = 2002;
+var year       = 2002;
 var slider_modal = {};
 var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
+var mean_age   = {};
+var residents  = {};
+var unemployed = {};
 
 (function() {
     "use strict";
@@ -33,7 +36,6 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
                 .css("top", (d3.event.pageY - 28) + "px")
                 .show();
             $("#district-name-box").html(district_name)
-            console.log(district_name);
         }
 
         function add_district() {
@@ -42,7 +44,7 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
             //mark borders of selected district
             $(this).css("stroke", "green");
 
-            if (selected_districts.length == 2) window.setTimeout(open_delayed_modal, 200);
+            if (selected_districts.length == 2) window.setTimeout(open_delayed_modal, 1);
         }
 
         function open_delayed_modal() {
@@ -81,7 +83,6 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
             onChange: function(value) {
                 year = value;
                 update_voter_map(year, voter_data);
-                //console.log(voter_data[year]["Au"])
             },
             width: "600"
         });
@@ -134,29 +135,27 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
                 .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-            d3.tsv("/public/data/data.tsv", type, function(error, data) {
-                if (error) {
-                    console.log("could not load data.tsv");
-                    return;
-                }
+            let district_A = get_district_name(selected_districts[0]);
+            let district_B = get_district_name(selected_districts[1]);
+            var districts_data = create_district_summary(district_A, district_B, mean_age[year], residents[year], unemployed[year])
+            console.log(`${JSON.stringify(districts_data)}`)
 
-                x.domain(d3.extent(data, d => { return d.value; })).nice();
-                y.domain(data.map(d => { return d.name; }));
+            x.domain([-2, +2]);
+            y.domain(districts_data.map(d => { return d.name; }));
 
-                svg.selectAll(".bar")
-                    .data(data)
-                    .enter().append("rect")
-                    .attr("class", d => { return "bar bar--" + (d.value < 0 ? "negative" : "positive") })
-                    .attr("x", d => { return x(Math.min(0, d.value)) })
-                    .attr("y", d => { return y(d.name) })
-                    .attr("width", d => { return Math.abs(x(d.value) - x(0)) })
-                    .attr("height", y.rangeBand());
+            svg.selectAll(".bar")
+                .data(districts_data)
+                .enter().append("rect")
+                .attr("class", d => { return "bar bar--" + (d.value < 0 ? "negative" : "positive") })
+                .attr("x", d => { return x(Math.min(0, d.value)) })
+                .attr("y", d => { return y(d.name) })
+                .attr("width", d => { return Math.abs(x(d.value) - x(0)) })
+                .attr("height", y.rangeBand());
 
-                svg.append("g")
-                    .attr("class", "y axis")
-                    .attr("transform", "translate(" + x(0) + ",0)")
-                    .call(yAxis);
-            });
+            svg.append("g")
+                .attr("class", "y axis")
+                .attr("transform", "translate(" + x(0) + ",0)")
+                .call(yAxis);
 
             function type(d) {
                 d.value = +d.value;
@@ -174,6 +173,18 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
         d3.json("/public/data/voter_turnout.json", function(error, data) {
             jQuery.extend(voter_data, data);
             update_voter_map(year, voter_data)
+        });
+        d3.json("/public/data/mean_age.json", function(error, data) {
+            jQuery.extend(mean_age, data);
+            console.log('[+] Load mean_age.json')
+        });
+        d3.json("/public/data/unemployed.json", function(error, data) {
+            jQuery.extend(unemployed, data);
+            console.log('[+] Load unemployed.json')
+        });
+        d3.json("/public/data/residents.json", function(error, data) {
+            jQuery.extend(residents, data);
+            console.log('[+] Load residents.json')
         });
     };
     window.onload = init;
