@@ -44,7 +44,8 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
 
         function add_district() {
             //disallow to select the same district twice
-            if (selected_districts.indexOf(this) === -1) {
+            if ($(this).attr("title") !== "Giesing" &&
+                selected_districts.indexOf(this) === -1) {
                 selected_districts.push(this);
 
                 //mark borders of selected district
@@ -112,8 +113,10 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
 
             if (!slider_active) {
                 //slider is not active, reset year an start auto play
-                var new_position = slider.getValue(),
-                    start = slider.conf.values[new_position];
+                var start = parseInt(slider.getValue());
+                if (slider.conf.values[end_position] === start) {
+                    start = slider.conf.values[0];
+                }
 
                 slider.setValues(start);
                 slider_active = true;
@@ -182,7 +185,6 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
             let district_A = get_district_name(selected_districts[0]);
             let district_B = get_district_name(selected_districts[1]);
             var districts_data = create_district_summary(district_A, district_B, mean_age[year], residents[year], unemployed[year])
-            console.log(`${JSON.stringify(districts_data)}`)
 
             x.domain([-2, +2]);
             y.domain(districts_data.map(d => { return d.name; }));
