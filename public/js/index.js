@@ -1,39 +1,15 @@
-var selected_districts = [],
-    voter_data = {},
-    year = 2002,
-    slider_main = {},
-    slider_modal = {},
-    slider_main_active = false,
-    slider_modal_active = false;
-
-var bar_chart_data = {
-    "2002": [{
-            "name": "A",
-            "value": -15
-        },
-        {
-            "name": "B",
-            "value": 20
-        },
-        {
-            "name": "C",
-            "value": -22
-        }
-    ],
-    "2003": [{
-            "name": "A",
-            "value": -10
-        },
-        {
-            "name": "B",
-            "value": 7
-        },
-        {
-            "name": "C",
-            "value": 22
-        }
-    ]
-};
+var selected_districts = [];
+var voter_data = {};
+var mean_age   = {};
+var residents  = {};
+var unemployed = {};
+var year       = 2002;
+//
+var slider_modal = {};
+var slider_main  = {};
+var slider_main_active = false;
+var slider_modal_active = false;
+var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
 
 (function() {
     "use strict";
@@ -74,7 +50,7 @@ var bar_chart_data = {
                 //mark borders of selected district
                 $(this).css("stroke", "green");
 
-                if (selected_districts.length == 2) window.setTimeout(open_delayed_modal, 200);
+                if (selected_districts.length >= 2) window.setTimeout(open_delayed_modal, 200);
             } else {
                 return;
             }
@@ -172,7 +148,7 @@ var bar_chart_data = {
             slider_modal.destroy();
         }
 
-        function create_bar_chart(data) {
+        function create_bar_chart() {
             var margin = { top: 20, right: 30, bottom: 40, left: 30 },
                 width = 960 - margin.left - margin.right,
                 height = 500 - margin.top - margin.bottom;
@@ -200,16 +176,21 @@ var bar_chart_data = {
                 .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-            x.domain(d3.extent(data, function(d) { return d.value; })).nice();
-            y.domain(data.map(function(d) { return d.name; }));
+            let district_A = get_district_name(selected_districts[0]);
+            let district_B = get_district_name(selected_districts[1]);
+            var districts_data = create_district_summary(district_A, district_B, mean_age[year], residents[year], unemployed[year])
+            console.log(`${JSON.stringify(districts_data)}`)
+
+            x.domain([-2, +2]);
+            y.domain(districts_data.map(d => { return d.name; }));
 
             svg.selectAll(".bar")
-                .data(data)
+                .data(districts_data)
                 .enter().append("rect")
-                .attr("class", function(d) { return "bar bar--" + (d.value < 0 ? "negative" : "positive"); })
-                .attr("x", function(d) { return x(Math.min(0, d.value)); })
-                .attr("y", function(d) { return y(d.name); })
-                .attr("width", function(d) { return Math.abs(x(d.value) - x(0)); })
+                .attr("class", d => { return "bar bar--" + (d.value < 0 ? "negative" : "positive") })
+                .attr("x", d => { return x(Math.min(0, d.value)) })
+                .attr("y", d => { return y(d.name) })
+                .attr("width", d => { return Math.abs(x(d.value) - x(0)) })
                 .attr("height", y.rangeBand());
 
             svg.append("g")
@@ -225,9 +206,6 @@ var bar_chart_data = {
 
         function show_chart_in_modal() {
             set_modal_title();
-            create_bar_chart(bar_chart_data["2002"]);
-
-
             //javascript deep copy, because references won't stay alive
             var my_modal = new rSlider({
                 target: "#slider-modal",
@@ -237,7 +215,7 @@ var bar_chart_data = {
                 tooltip: false,
                 onChange: function(value) {
                     year = value;
-                    create_bar_chart(bar_chart_data[year]);
+                    create_bar_chart();
                 },
                 width: "600"
             });
@@ -260,6 +238,18 @@ var bar_chart_data = {
         d3.json("/public/data/voter_turnout.json", function(error, data) {
             jQuery.extend(voter_data, data);
             update_voter_map(year, voter_data)
+        });
+        d3.json("/public/data/mean_age.json", function(error, data) {
+            jQuery.extend(mean_age, data);
+            console.log('[+] Load mean_age.json')
+        });
+        d3.json("/public/data/unemployed.json", function(error, data) {
+            jQuery.extend(unemployed, data);
+            console.log('[+] Load unemployed.json')
+        });
+        d3.json("/public/data/residents.json", function(error, data) {
+            jQuery.extend(residents, data);
+            console.log('[+] Load residents.json')
         });
     };
     window.onload = init;
