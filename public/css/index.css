@@ -101,7 +101,7 @@ div.tooltip {
     shape-rendering: crispEdges;
 }
 
-#play-button {
+.play-button {
     margin: 0 auto;
     display: block;
     width: 3%;

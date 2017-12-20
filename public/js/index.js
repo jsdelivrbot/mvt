@@ -1,11 +1,15 @@
 var selected_districts = [];
 var voter_data = {};
-var year       = 2002;
-var slider_modal = {};
-var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
 var mean_age   = {};
 var residents  = {};
 var unemployed = {};
+var year       = 2002;
+//
+var slider_modal = {};
+var slider_main  = {};
+var slider_main_active = false;
+var slider_modal_active = false;
+var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
 
 (function() {
     "use strict";
@@ -74,13 +78,13 @@ var unemployed = {};
         });
 
         //init slider
-        var slider = new rSlider({
-            target: "#slider",
+        slider_main = new rSlider({
+            target: "#slider-main",
             values: [2002, 2003, 2005, 2008, 2009],
             range: false,
-            set: [2003],
+            set: [2002],
             tooltip: false,
-            onChange: function(value) {
+            onChange: value => {
                 year = value;
                 update_voter_map(year, voter_data);
             },
@@ -90,7 +94,39 @@ var unemployed = {};
         //clear selected districts from list
         $("#exampleModal").bind("closed.zf.reveal", clear_state);
         //open new diagramm in modal
-        $('#exampleModal').bind('open.zf.reveal', show_chart_in_modal);
+        $("#exampleModal").bind("open.zf.reveal", show_chart_in_modal);
+        //start the main time slider
+        $("#footer-main > #play-button-main")
+            .bind("click", change_slider.bind(null, slider_main, slider_main_active));
+
+        //changes the position of the slider, and stops after reached end_position
+        function change_slider(slider, slider_active) {
+            var current_value = parseInt(slider.getValue()),
+                current_position = slider.conf.values.indexOf(current_value),
+                end_position = slider.conf.values.length - 1;
+
+            if (!slider_active) {
+                //slider is not active, reset year an start auto play
+                var new_position = slider.getValue(),
+                    start = slider.conf.values[new_position];
+
+                slider.setValues(start);
+                slider_active = true;
+                setTimeout(change_slider.bind(null, slider, slider_active), 1000);
+            } else if (slider_active && current_position < end_position) {
+                //slider is active and not at end position, go on
+
+                var first_value = 0,
+                    new_position = current_position + 1,
+                    start = slider.conf.values[first_value],
+                    end = slider.conf.values[new_position];
+                slider.setValues(start, end);
+                setTimeout(change_slider.bind(null, slider, slider_active), 1000);
+            } else if (slider_active && current_position === end_position) {
+                //slider reached end position disable autoplay
+                slider_active = false;
+            }
+        }
 
         function clear_state() {
             //reset borders of selected districts
@@ -100,14 +136,14 @@ var unemployed = {};
             //remove unused chart in modal
             d3.select(".modalChart").remove("svg");
 
+            //unbound click event, otherwise change_slider would be called multiple times
+            $("#footer-modal > #play-button-modal").bind("click", change_slider);
+
             //remove slider
             slider_modal.destroy();
         }
 
-        function show_chart_in_modal() {
-            set_modal_title();
-
-
+        function create_bar_chart() {
             var margin = { top: 20, right: 30, bottom: 40, left: 30 },
                 width = 960 - margin.left - margin.right,
                 height = 500 - margin.top - margin.bottom;
@@ -161,6 +197,30 @@ var unemployed = {};
                 d.value = +d.value;
                 return d;
             }
+        }
+
+        function show_chart_in_modal() {
+            set_modal_title();
+            //javascript deep copy, because references won't stay alive
+            var my_modal = new rSlider({
+                target: "#slider-modal",
+                values: [2002, 2003, 2005, 2008, 2009],
+                range: false,
+                set: [2002],
+                tooltip: false,
+                onChange: function(value) {
+                    year = value;
+                    create_bar_chart();
+                },
+                width: "600"
+            });
+
+            jQuery.extend(
+                slider_modal,
+                my_modal
+            );
+            $("#footer-modal > #play-button-modal")
+                .bind("click", change_slider.bind(null, slider_modal, slider_modal_active));
         }
 
         function set_modal_title() {
