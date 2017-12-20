@@ -34,11 +34,11 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
         function show_tooltip() {
             var district_name = $(this).data("name");
 
-            $(".tooltip")
-                .html(district_name)
-                .css("left", d3.event.pageX + "px")
-                .css("top", (d3.event.pageY - 28) + "px")
-                .show();
+            // $(".tooltip")
+            //     .html(district_name)
+            //     .css("left", d3.event.pageX + "px")
+            //     .css("top", (d3.event.pageY - 28) + "px")
+            //     .show();
             $("#district-name-box").html(district_name)
         }
 
@@ -74,7 +74,7 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
                 .attr("class", "district")
                 .on("click", add_district)
                 .on("mouseover", show_tooltip)
-                .on("mouseout", () => { $(".tooltip").hide() }) //ES6 — arrow functions ʕ•ᴥ•ʔ
+                // .on("mouseout", () => { $(".tooltip").hide() }) //ES6 — arrow functions ʕ•ᴥ•ʔ
                 .attr("d", path)
                 .attr("id", md => { return md.properties.cartodb_id })
                 .attr("title", md => { return md.properties.name })
@@ -169,6 +169,7 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
             var yAxis = d3.svg.axis()
                 .scale(y)
                 .orient("left")
+
                 .tickSize(0)
                 .tickPadding(6);
 
@@ -192,15 +193,19 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
             svg.selectAll(".bar")
                 .data(districts_data)
                 .enter().append("rect")
+                .on("mouseover", show_feature_percentage)
+                .on("mouseout", () => { $(".tooltip").hide() }) //ES6 — arrow functions ʕ•ᴥ•ʔ
                 .attr("class", d => { return "bar bar--" + (d.value < 0 ? "negative" : "positive") })
                 .attr("x", d => { return x(Math.min(0, d.value)) })
                 .attr("y", d => { return y(d.name) })
                 .attr("width", d => { return Math.abs(x(d.value) - x(0)) })
-                .attr("height", y.rangeBand());
+                .attr("height", y.rangeBand())
+                .attr("value", d => { return d.value });
 
             svg.append("g")
                 .attr("class", "y axis")
                 .attr("transform", "translate(" + x(0) + ",0)")
+              //  .attr("transform", "translate(150,0)")
                 .call(yAxis);
 
             function type(d) {
