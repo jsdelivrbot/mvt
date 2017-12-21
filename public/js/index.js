@@ -231,16 +231,14 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
                 "click",
                 change_slider.bind(null, slider_modal, slider_modal_active)
             );
-
-            //fix position of modal after load
-            $("#exampleModal").css({top: "2%"});
         }
 
         function set_modal_title() {
             var district_one = $(selected_districts[0]).attr("title"),
                 district_two = $(selected_districts[1]).attr("title");
 
-            $("#title-modal").text(`${district_one} vs ${district_two}`);
+            $("#header-left").text(district_one);
+            $("#header-right").text(district_two);
         }
 
         d3.json("/public/data/voter_turnout.json", function(error, data) {
