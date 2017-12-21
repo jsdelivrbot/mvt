@@ -149,6 +149,9 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
 
             //remove slider
             slider_modal.destroy();
+
+            //hide tooltip
+            $(".tooltip").hide();
         }
 
         function create_bar_chart() {
