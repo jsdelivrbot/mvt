@@ -42,8 +42,8 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
                 selected_districts.push(this);
 
                 //mark borders of selected district
-                $(this).css("stroke", "green");
-
+                $(this).css("stroke", "#f7e4e0");
+                
                 if (selected_districts.length >= 2) window.setTimeout(open_delayed_modal, 200);
             } else {
                 return;

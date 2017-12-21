@@ -24,10 +24,23 @@ div.header {
     display: flex;
     align-content: center;
     justify-content: center;
+    flex-flow: column;
     flex: 0 1 15%;
 }
 
-p#district-name-box {
+div.header > h1#headline {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    flex: 0 1 75%;
+}
+
+div.header > p#district-name-box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex: 0 1 25%;
     margin: 1em 0 0.5em 0;
     color: #343434;
     font-weight: normal;
