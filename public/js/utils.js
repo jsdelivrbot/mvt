@@ -127,8 +127,18 @@ function update_modal_background(selected_districts)
     let fill_color_A = get_district_color(selected_districts[0]);
     let fill_color_B = get_district_color(selected_districts[1]);
 
-    $("#header-left").css("background", fill_color_A)
-    $("#header-right").css("background", fill_color_B)
+  //  $("#header-left").css("background", fill_color_A)
+  //  background: #efefef;
+    $("#header-left").css("border", "5px solid " + fill_color_A);
+    $("#header-left").css("border-radius", " 8px");
+    $("#header-left").css("pointer-event", " none");
+
+    $("rect.bar--negative").css("fill", fill_color_A)
+
+    $("#header-right").css("border", "5px solid " + fill_color_B);
+    $("#header-right").css("border-radius", " 8px");
+    $("#header-right").css("pointer-event", " none");
+    $("rect.bar--positive").css("fill", fill_color_B)
 }
 
 function get_district_color(path)

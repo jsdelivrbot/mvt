@@ -88,7 +88,7 @@ div.footer {
     align-content: center;
     justify-content: center;
     display: flex;
-    flex: 1 1 15%;
+    flex: 0 1 15%;
     flex-flow: column;
 }
 
@@ -113,6 +113,16 @@ div.tooltip {
     border: 5px solid #c4c4c4;
     border-radius: 8px;
     pointer-events: none;
+}
+
+#exampleModal {
+    height: 80%;
+}
+
+#modal-content {
+    display: flex;
+    flex: 0 0 100%;
+    flex-flow: column;
 }
 
 .modalChart {

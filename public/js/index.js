@@ -52,6 +52,7 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
 
         function open_delayed_modal() {
             $("#exampleModal").foundation("open");
+            $("#footer-main").hide()
         }
 
         function add_district_name(element_clicked, new_text) {
@@ -146,6 +147,8 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
 
             //hide tooltip
             $(".tooltip").hide();
+
+            $("#footer-main").show()
         }
 
         function create_bar_chart() {
@@ -218,7 +221,6 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
             }
 
             $(".x-axis > .tick > text").each(function () {
-                console.log($(this).html())
                 let init_value = $(this).html()
                 let float_value = Math.abs(parseFloat(init_value))
                 let string_value = `${float_value}x`
@@ -241,6 +243,7 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
                     year = value;
                     create_bar_chart();
                     update_modal_background(selected_districts);
+                    update_voter_map(year, voter_data);
                 },
                 width: "600"
             });
