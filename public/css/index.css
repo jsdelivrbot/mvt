@@ -28,6 +28,30 @@ div.header {
     flex: 0 1 15%;
 }
 
+#header-modal{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: row;
+    flex: 0 1 15%;
+}
+
+#header-info{
+    display: flex;
+    flex-flow: column;
+    flex: 0 0 10%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.modal-header-info{
+    display: flex;
+    flex-flow: column;
+    flex: 0 0 40%;
+    text-align: center;
+    font-size: 2em;
+}
+
 div.header > h1#headline {
     display: flex;
     align-content: center;
