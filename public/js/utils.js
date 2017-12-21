@@ -121,6 +121,20 @@ function show_feature_percentage()
         .show();
 }
 
+// this is triggered on any modal slider change
+function update_modal_background(selected_districts)
+{
+    let fill_color_A = get_district_color(selected_districts[0]);
+    let fill_color_B = get_district_color(selected_districts[1]);
+
+    $("#header-left").css("background", fill_color_A)
+    $("#header-right").css("background", fill_color_B)
+}
+
+function get_district_color(path)
+{
+    return $(path).css("fill");
+}
 
 
 

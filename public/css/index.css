@@ -81,7 +81,7 @@ div.tooltip {
 
     position: absolute;
     text-align: center;
-    width: 8%;
+    width: 11%;
     height: 40px;
     padding: 2px;
     font: 25px sans-serif;
@@ -110,6 +110,28 @@ div.tooltip {
 
 .axis path,
 .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x-axis text {
+    font: 17px sans-serif;
+}
+
+.x-axis path,
+.x-axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.y-axis text {
+    font: 17px sans-serif;
+}
+
+.y-axis path,
+.y-axis line {
     fill: none;
     stroke: #000;
     shape-rendering: crispEdges;

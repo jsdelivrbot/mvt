@@ -43,7 +43,7 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
 
                 //mark borders of selected district
                 $(this).css("stroke", "#f7e4e0");
-                
+
                 if (selected_districts.length >= 2) window.setTimeout(open_delayed_modal, 200);
             } else {
                 return;
@@ -86,6 +86,7 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
             onChange: value => {
                 year = value;
                 update_voter_map(year, voter_data);
+
             },
             width: "600"
         });
@@ -148,19 +149,28 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
         }
 
         function create_bar_chart() {
+
+            let district_A = get_district_name(selected_districts[0]);
+            let district_B = get_district_name(selected_districts[1]);
+            var districts_data = create_district_summary(district_A, district_B, mean_age[year], residents[year], unemployed[year])
+
             var margin = { top: 20, right: 30, bottom: 40, left: 30 },
                 width = 960 - margin.left - margin.right,
                 height = 500 - margin.top - margin.bottom;
 
             var x = d3.scale.linear()
-                .range([0, width]);
+                .range([0, width])
+                .domain([-2, +2]);
 
             var y = d3.scale.ordinal()
-                .rangeRoundBands([0, height], 0.1);
+                .rangeRoundBands([0, height], 0.1)
+                .domain(districts_data.map(d => { return d.name; }));
 
             var xAxis = d3.svg.axis()
                 .scale(x)
-                .orient("bottom");
+                .orient("bottom")
+                // .tickValues([200, 150, 100, 50, 0, 50, 100, 150, 200])
+                // .tickFormat(function(d) { return `${d}%`; });
 
             var yAxis = d3.svg.axis()
                 .scale(y)
@@ -179,13 +189,6 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
                 .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-            let district_A = get_district_name(selected_districts[0]);
-            let district_B = get_district_name(selected_districts[1]);
-            var districts_data = create_district_summary(district_A, district_B, mean_age[year], residents[year], unemployed[year])
-
-            x.domain([-2, +2]);
-            y.domain(districts_data.map(d => { return d.name; }));
-
             svg.selectAll(".bar")
                 .data(districts_data)
                 .enter().append("rect")
@@ -199,15 +202,30 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
                 .attr("value", d => { return d.value });
 
             svg.append("g")
-                .attr("class", "y axis")
+                .attr("class", "y-axis")
                 .attr("transform", "translate(" + x(0) + ",0)")
               //  .attr("transform", "translate(150,0)")
                 .call(yAxis);
+
+            svg.append("g")
+                .attr("class", "x-axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis)
 
             function type(d) {
                 d.value = +d.value;
                 return d;
             }
+
+            $(".x-axis > .tick > text").each(function () {
+                console.log($(this).html())
+                let init_value = $(this).html()
+                let float_value = Math.abs(parseFloat(init_value))
+                let string_value = `${float_value}x`
+                $(this).html(string_value)
+            });
+
+
         }
 
         function show_chart_in_modal() {
@@ -222,6 +240,7 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
                 onChange: function(value) {
                     year = value;
                     create_bar_chart();
+                    update_modal_background(selected_districts);
                 },
                 width: "600"
             });
