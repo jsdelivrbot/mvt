@@ -1,0 +1,287 @@
+INDIKATOR_GRUPPE,INDIKATOR_BEZEICHNUNG,INDIKATOR_AUSPRAEGUNG,INDIKATOR_WERT,BASISWERT_1,BASISWERT_2,BASISWERT_3,BASISWERT_4,BASISWERT_5,NAME_BASISWERT1,NAME_BASISWERT2,NAME_BASISWERT3,NAME_BASISWERT4,NAME_BASISWERT5,JAHR,GLIEDERUNG,NUMMER,NAME
+Wahlen,Wahlbeteiligung,Bundestagswahl,"80,3",673010,837846,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Gesamtstadt,#100,Stadt München
+Wahlen,Wahlbeteiligung,Bundestagswahl,"77,0",9880,12831,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,8,08 Schwanthalerhöhe
+Wahlen,Wahlbeteiligung,Stadtratswahl,"50,3",21178,42106,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,4,04 Schwabing - West
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"51,0",461898,905748,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Gesamtstadt,#100,Stadt München
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"56,4",25017,44374,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,21,21 Pasing - Obermenzing
+Wahlen,Wahlbeteiligung,Bundestagswahl,"80,0",31357,39205,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,12,12 Schwabing - Freimann
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"51,4",18116,35274,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,18,18 Untergiesing - Harlaching
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"55,3",16793,30355,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,20,20 Hadern
+Wahlen,Wahlbeteiligung,Stadtratswahl,"53,4",29450,55150,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,13,13 Bogenhausen
+Wahlen,Wahlbeteiligung,Stadtratswahl,"55,9",18886,33792,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,15,15 Trudering - Riem
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"48,2",6841,14200,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,1,01 Altstadt - Lehel
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"55,4",14796,26711,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,22,22 Aubing - Lochhausen - Langwied
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"43,4",6692,15416,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,8,08 Schwanthalerhöhe
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"53,4",29450,55150,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,13,13 Bogenhausen
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"50,4",33753,67003,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,16,16 Ramersdorf - Perlach
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"49,3",12233,24793,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,6,06 Sendling
+Wahlen,Wahlbeteiligung,Stadtratswahl,"56,4",25017,44374,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,21,21 Pasing - Obermenzing
+Wahlen,Wahlbeteiligung,Bundestagswahl,"79,2",27198,34340,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,25,25 Laim
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"44,1",17323,39252,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,11,11 Milbertshofen - Am Hart
+Wahlen,Wahlbeteiligung,Stadtratswahl,"43,4",6692,15416,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,8,08 Schwanthalerhöhe
+Wahlen,Wahlbeteiligung,Stadtratswahl,"52,3",31414,60094,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,9,09 Neuhausen - Nymphenburg
+Wahlen,Wahlbeteiligung,Stadtratswahl,"50,6",16037,31689,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,10,10 Moosach
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"50,6",16037,31689,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,10,10 Moosach
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"49,4",17302,35046,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,24,24 Feldmoching - Hasenbergl
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"46,5",14774,31767,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,3,03 Maxvorstadt
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"47,5",14598,30713,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,17,17 Obergiesing
+Wahlen,Wahlbeteiligung,Stadtratswahl,"50,4",33753,67003,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,16,16 Ramersdorf - Perlach
+Wahlen,Wahlbeteiligung,Stadtratswahl,"55,4",14796,26711,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,22,22 Aubing - Lochhausen - Langwied
+Wahlen,Wahlbeteiligung,Stadtratswahl,"47,5",14598,30713,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,17,17 Obergiesing
+Wahlen,Wahlbeteiligung,Bundestagswahl,"84,0",15432,18372,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,23,23 Allach - Untermenzing
+Wahlen,Wahlbeteiligung,Bundestagswahl,"82,5",24007,29083,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,20,20 Hadern
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"52,3",31414,60094,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,9,09 Neuhausen - Nymphenburg
+Wahlen,Wahlbeteiligung,Stadtratswahl,"49,3",12233,24793,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,6,06 Sendling
+Wahlen,Wahlbeteiligung,Stadtratswahl,"46,9",14643,31221,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,2,02 Ludwigsvorstadt - Isarvorstadt
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"48,4",18308,37796,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,5,05 Au - Haidhausen
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"51,3",18126,35320,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,7,07 Sendling - Westpark
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"58,1",11190,19271,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,23,23 Allach - Untermenzing
+Wahlen,Wahlbeteiligung,Stadtratswahl,"48,1",20704,43005,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,12,12 Schwabing - Freimann
+Wahlen,Wahlbeteiligung,Bundestagswahl,"80,9",45258,55965,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,9,09 Neuhausen - Nymphenburg
+Wahlen,Wahlbeteiligung,Stadtratswahl,"44,1",17323,39252,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,11,11 Milbertshofen - Am Hart
+Wahlen,Wahlbeteiligung,Stadtratswahl,"48,2",6841,14200,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,1,01 Altstadt - Lehel
+Wahlen,Wahlbeteiligung,Stadtratswahl,"55,3",16793,30355,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,20,20 Hadern
+Wahlen,Wahlbeteiligung,Bundestagswahl,"80,9",30935,38225,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,4,04 Schwabing - West
+Wahlen,Wahlbeteiligung,Bundestagswahl,"78,7",23331,29653,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,10,10 Moosach
+Wahlen,Wahlbeteiligung,Bundestagswahl,"80,9",10340,12785,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,1,01 Altstadt - Lehel
+Wahlen,Wahlbeteiligung,Bundestagswahl,"80,3",26459,32943,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,18,18 Untergiesing - Harlaching
+Wahlen,Wahlbeteiligung,Bundestagswahl,"78,5",48723,62103,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,16,16 Ramersdorf - Perlach
+Wahlen,Wahlbeteiligung,Bundestagswahl,"73,9",25627,34686,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,11,11 Milbertshofen - Am Hart
+Wahlen,Wahlbeteiligung,Bundestagswahl,"83,1",45655,54970,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,19,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+Wahlen,Wahlbeteiligung,Bundestagswahl,"83,6",35446,42404,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,21,21 Pasing - Obermenzing
+Wahlen,Wahlbeteiligung,Stadtratswahl,"51,4",18116,35274,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,18,18 Untergiesing - Harlaching
+Wahlen,Wahlbeteiligung,Stadtratswahl,"58,1",11190,19271,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,23,23 Allach - Untermenzing
+Wahlen,Wahlbeteiligung,Stadtratswahl,"49,4",17302,35046,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,24,24 Feldmoching - Hasenbergl
+Wahlen,Wahlbeteiligung,Stadtratswahl,"51,3",18126,35320,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,7,07 Sendling - Westpark
+Wahlen,Wahlbeteiligung,Bundestagswahl,"79,5",26197,32938,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,7,07 Sendling - Westpark
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"55,9",18886,33792,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,15,15 Trudering - Riem
+Wahlen,Wahlbeteiligung,Stadtratswahl,"49,3",12950,26258,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,14,14 Berg am Laim
+Wahlen,Wahlbeteiligung,Stadtratswahl,"48,4",18308,37796,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,5,05 Au - Haidhausen
+Wahlen,Wahlbeteiligung,Stadtratswahl,"50,8",18554,36512,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,25,25 Laim
+Wahlen,Wahlbeteiligung,Bundestagswahl,"84,9",27353,32201,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,15,15 Trudering - Riem
+Wahlen,Wahlbeteiligung,Bundestagswahl,"76,4",25059,32801,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,24,24 Feldmoching - Hasenbergl
+Wahlen,Wahlbeteiligung,Stadtratswahl,"46,5",14774,31767,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,3,03 Maxvorstadt
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"50,3",21178,42106,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,4,04 Schwabing - West
+Wahlen,Wahlbeteiligung,Bundestagswahl,"80,1",18088,22575,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,6,06 Sendling
+Wahlen,Wahlbeteiligung,Bundestagswahl,"81,1",20840,25691,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,22,22 Aubing - Lochhausen - Langwied
+Wahlen,Wahlbeteiligung,Bundestagswahl,"77,4",18809,24298,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,14,14 Berg am Laim
+Wahlen,Wahlbeteiligung,Stadtratswahl,"55,0",32220,58630,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,19,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"49,3",12950,26258,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,14,14 Berg am Laim
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"46,9",14643,31221,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,2,02 Ludwigsvorstadt - Isarvorstadt
+Wahlen,Wahlbeteiligung,Bundestagswahl,"80,0",27258,34072,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,5,05 Au - Haidhausen
+Wahlen,Wahlbeteiligung,Bundestagswahl,"83,8",43434,51803,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,13,13 Bogenhausen
+Wahlen,Wahlbeteiligung,Bundestagswahl,"77,0",21625,28095,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,17,17 Obergiesing
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"48,1",20704,43005,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,12,12 Schwabing - Freimann
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"55,0",32220,58630,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,19,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"50,8",18554,36512,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,25,25 Laim
+Wahlen,Wahlbeteiligung,Bundestagswahl,"80,8",23014,28483,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,3,03 Maxvorstadt
+Wahlen,Wahlbeteiligung,Stadtratswahl,"51,0",461898,905748,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2002,Gesamtstadt,#100,Stadt München
+Wahlen,Wahlbeteiligung,Bundestagswahl,"79,4",21685,27324,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2002,Stadtbezirk,2,02 Ludwigsvorstadt - Isarvorstadt
+Wahlen,Wahlbeteiligung,Landtagswahl,"55,6",18118,32558,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,18,18 Untergiesing - Harlaching
+Wahlen,Wahlbeteiligung,Landtagswahl,"51,3",14273,27815,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,17,17 Obergiesing
+Wahlen,Wahlbeteiligung,Landtagswahl,"53,6",18093,33786,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,5,05 Au - Haidhausen
+Wahlen,Wahlbeteiligung,Landtagswahl,"53,4",14928,27933,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,3,03 Maxvorstadt
+Wahlen,Wahlbeteiligung,Landtagswahl,"53,3",20743,38904,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,12,12 Schwabing - Freimann
+Wahlen,Wahlbeteiligung,Landtagswahl,"59,6",32526,54585,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,19,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+Wahlen,Wahlbeteiligung,Landtagswahl,"54,6",12166,22301,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,6,06 Sendling
+Wahlen,Wahlbeteiligung,Landtagswahl,"56,0",30934,55254,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,9,09 Neuhausen - Nymphenburg
+Wahlen,Wahlbeteiligung,Landtagswahl,"53,4",18130,33920,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,25,25 Laim
+Wahlen,Wahlbeteiligung,Landtagswahl,"53,0",32558,61481,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,16,16 Ramersdorf - Perlach
+Wahlen,Wahlbeteiligung,Landtagswahl,"51,8",12529,24172,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,14,14 Berg am Laim
+Wahlen,Wahlbeteiligung,Landtagswahl,"53,6",15812,29513,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,10,10 Moosach
+Wahlen,Wahlbeteiligung,Landtagswahl,"48,5",16680,34388,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,11,11 Milbertshofen - Am Hart
+Wahlen,Wahlbeteiligung,Landtagswahl,"54,8",6806,12414,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,1,01 Altstadt - Lehel
+Wahlen,Wahlbeteiligung,Landtagswahl,"59,9",25317,42231,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,21,21 Pasing - Obermenzing
+Wahlen,Wahlbeteiligung,Landtagswahl,"57,3",14580,25433,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,22,22 Aubing - Lochhausen - Langwied
+Wahlen,Wahlbeteiligung,Landtagswahl,"54,1",17542,32399,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,7,07 Sendling - Westpark
+Wahlen,Wahlbeteiligung,Landtagswahl,"57,9",29764,51380,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,13,13 Bogenhausen
+Wahlen,Wahlbeteiligung,Landtagswahl,"60,5",11087,18323,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,23,23 Allach - Untermenzing
+Wahlen,Wahlbeteiligung,Landtagswahl,"55,1",457426,829827,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Gesamtstadt,#100,Stadt München
+Wahlen,Wahlbeteiligung,Landtagswahl,"52,7",14109,26749,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,2,02 Ludwigsvorstadt - Isarvorstadt
+Wahlen,Wahlbeteiligung,Landtagswahl,"50,5",6480,12827,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,8,08 Schwanthalerhöhe
+Wahlen,Wahlbeteiligung,Landtagswahl,"58,0",16766,28887,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,20,20 Hadern
+Wahlen,Wahlbeteiligung,Landtagswahl,"51,9",16846,32449,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,24,24 Feldmoching - Hasenbergl
+Wahlen,Wahlbeteiligung,Landtagswahl,"60,3",19635,32556,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,15,15 Trudering - Riem
+Wahlen,Wahlbeteiligung,Landtagswahl,"55,9",21004,37569,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2003,Stadtbezirk,4,04 Schwabing - West
+Wahlen,Wahlbeteiligung,Europawahl,"38,1",8616,22617,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,6,06 Sendling
+Wahlen,Wahlbeteiligung,Europawahl,"40,9",7571,18492,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,23,23 Allach - Untermenzing
+Wahlen,Wahlbeteiligung,Europawahl,"40,9",15529,37989,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,4,04 Schwabing - West
+Wahlen,Wahlbeteiligung,Europawahl,"40,9",13525,33066,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,15,15 Trudering - Riem
+Wahlen,Wahlbeteiligung,Europawahl,"40,1",13668,34074,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,5,05 Au - Haidhausen
+Wahlen,Wahlbeteiligung,Europawahl,"38,3",14974,39046,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,12,12 Schwabing - Freimann
+Wahlen,Wahlbeteiligung,Europawahl,"35,1",9786,27859,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,17,17 Obergiesing
+Wahlen,Wahlbeteiligung,Europawahl,"38,9",324737,835708,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Gesamtstadt,#100,Stadt München
+Wahlen,Wahlbeteiligung,Europawahl,"32,0",11053,34519,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,11,11 Milbertshofen - Am Hart
+Wahlen,Wahlbeteiligung,Europawahl,"35,8",10668,29762,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,10,10 Moosach
+Wahlen,Wahlbeteiligung,Europawahl,"40,2",11322,28154,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,3,03 Maxvorstadt
+Wahlen,Wahlbeteiligung,Europawahl,"43,1",5372,12464,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,1,01 Altstadt - Lehel
+Wahlen,Wahlbeteiligung,Europawahl,"41,1",21303,51779,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,13,13 Bogenhausen
+Wahlen,Wahlbeteiligung,Europawahl,"40,1",10887,27132,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,2,02 Ludwigsvorstadt - Isarvorstadt
+Wahlen,Wahlbeteiligung,Europawahl,"40,5",11802,29112,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,20,20 Hadern
+Wahlen,Wahlbeteiligung,Europawahl,"36,6",22676,61895,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,16,16 Ramersdorf - Perlach
+Wahlen,Wahlbeteiligung,Europawahl,"38,1",12391,32519,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,7,07 Sendling - Westpark
+Wahlen,Wahlbeteiligung,Europawahl,"37,0",9440,25487,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,22,22 Aubing - Lochhausen - Langwied
+Wahlen,Wahlbeteiligung,Europawahl,"42,8",18290,42752,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,21,21 Pasing - Obermenzing
+Wahlen,Wahlbeteiligung,Europawahl,"40,9",13376,32717,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,18,18 Untergiesing - Harlaching
+Wahlen,Wahlbeteiligung,Europawahl,"40,7",22591,55536,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,9,09 Neuhausen - Nymphenburg
+Wahlen,Wahlbeteiligung,Europawahl,"34,9",8471,24307,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,14,14 Berg am Laim
+Wahlen,Wahlbeteiligung,Europawahl,"37,9",12885,34008,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,25,25 Laim
+Wahlen,Wahlbeteiligung,Europawahl,"42,1",23107,54880,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,19,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+Wahlen,Wahlbeteiligung,Europawahl,"33,0",10699,32459,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,24,24 Feldmoching - Hasenbergl
+Wahlen,Wahlbeteiligung,Europawahl,"36,2",4735,13083,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2004,Stadtbezirk,8,08 Schwanthalerhöhe
+Wahlen,Wahlbeteiligung,Bundestagswahl,"78,0",43545,55813,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,9,09 Neuhausen - Nymphenburg
+Wahlen,Wahlbeteiligung,Bundestagswahl,"73,4",9797,13345,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,8,08 Schwanthalerhöhe
+Wahlen,Wahlbeteiligung,Bundestagswahl,"76,6",24983,32599,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,18,18 Untergiesing - Harlaching
+Wahlen,Wahlbeteiligung,Bundestagswahl,"80,6",34816,43181,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,21,21 Pasing - Obermenzing
+Wahlen,Wahlbeteiligung,Bundestagswahl,"72,8",17670,24267,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,14,14 Berg am Laim
+Wahlen,Wahlbeteiligung,Bundestagswahl,"78,9",23090,29256,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,20,20 Hadern
+Wahlen,Wahlbeteiligung,Bundestagswahl,"74,5",22173,29762,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,10,10 Moosach
+Wahlen,Wahlbeteiligung,Bundestagswahl,"77,4",26997,34891,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,5,05 Au - Haidhausen
+Wahlen,Wahlbeteiligung,Bundestagswahl,"72,7",20399,28067,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,17,17 Obergiesing
+Wahlen,Wahlbeteiligung,Bundestagswahl,"69,5",24102,34689,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,11,11 Milbertshofen - Am Hart
+Wahlen,Wahlbeteiligung,Bundestagswahl,"78,2",22314,28540,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,3,03 Maxvorstadt
+Wahlen,Wahlbeteiligung,Bundestagswahl,"76,7",17492,22793,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,6,06 Sendling
+Wahlen,Wahlbeteiligung,Bundestagswahl,"81,7",27798,34042,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,15,15 Trudering - Riem
+Wahlen,Wahlbeteiligung,Bundestagswahl,"76,1",20807,27354,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,2,02 Ludwigsvorstadt - Isarvorstadt
+Wahlen,Wahlbeteiligung,Bundestagswahl,"80,6",41772,51834,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,13,13 Bogenhausen
+Wahlen,Wahlbeteiligung,Bundestagswahl,"72,4",23482,32426,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,24,24 Feldmoching - Hasenbergl
+Wahlen,Wahlbeteiligung,Bundestagswahl,"75,1",25310,33685,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,25,25 Laim
+Wahlen,Wahlbeteiligung,Bundestagswahl,"77,0",29932,38882,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,12,12 Schwabing - Freimann
+Wahlen,Wahlbeteiligung,Bundestagswahl,"77,4",19670,25402,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,22,22 Aubing - Lochhausen - Langwied
+Wahlen,Wahlbeteiligung,Bundestagswahl,"79,3",43753,55196,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,19,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+Wahlen,Wahlbeteiligung,Bundestagswahl,"80,1",14960,18680,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,23,23 Allach - Untermenzing
+Wahlen,Wahlbeteiligung,Bundestagswahl,"78,7",10035,12749,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,1,01 Altstadt - Lehel
+Wahlen,Wahlbeteiligung,Bundestagswahl,"76,9",645933,840166,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Gesamtstadt,#100,Stadt München
+Wahlen,Wahlbeteiligung,Bundestagswahl,"75,7",24669,32589,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,7,07 Sendling - Westpark
+Wahlen,Wahlbeteiligung,Bundestagswahl,"78,6",30259,38494,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,4,04 Schwabing - West
+Wahlen,Wahlbeteiligung,Bundestagswahl,"74,8",46108,61630,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2005,Stadtbezirk,16,16 Ramersdorf - Perlach
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"50,3",29664,58921,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,13,13 Bogenhausen
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"47,7",20049,42007,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,5,05 Au - Haidhausen
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"47,2",17926,37943,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,25,25 Laim
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"47,6",471628,989782,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Gesamtstadt,#100,Stadt München
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"43,5",16538,38001,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,3,03 Maxvorstadt
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"45,6",16015,35098,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,2,02 Ludwigsvorstadt - Isarvorstadt
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"51,6",21045,40821,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,15,15 Trudering - Riem
+Wahlen,Wahlbeteiligung,Stadtratswahl,"50,4",29667,58921,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,13,13 Bogenhausen
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"48,4",13420,27730,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,6,06 Sendling
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"49,0",18427,37638,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,18,18 Untergiesing - Harlaching
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"39,0",17090,43865,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,11,11 Milbertshofen - Am Hart
+Wahlen,Wahlbeteiligung,Stadtratswahl,"51,0",31798,62400,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,19,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+Wahlen,Wahlbeteiligung,Stadtratswahl,"44,6",21482,48136,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,12,12 Schwabing - Freimann
+Wahlen,Wahlbeteiligung,Stadtratswahl,"46,3",15693,33870,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,10,10 Moosach
+Wahlen,Wahlbeteiligung,Stadtratswahl,"47,5",23048,48478,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,4,04 Schwabing - West
+Wahlen,Wahlbeteiligung,Landtagswahl,"57,0",503015,882602,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Gesamtstadt,#100,Stadt München
+Wahlen,Wahlbeteiligung,Landtagswahl,"52,1",15427,29600,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,17,17 Obergiesing
+Wahlen,Wahlbeteiligung,Landtagswahl,"54,2",16291,30036,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,10,10 Moosach
+Wahlen,Wahlbeteiligung,Landtagswahl,"52,0",12866,24765,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,14,14 Berg am Laim
+Wahlen,Wahlbeteiligung,Landtagswahl,"54,0",33537,62123,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,16,16 Ramersdorf - Perlach
+Wahlen,Wahlbeteiligung,Landtagswahl,"55,5",18452,33233,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,3,03 Maxvorstadt
+Wahlen,Wahlbeteiligung,Landtagswahl,"62,9",27903,44389,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,21,21 Pasing - Obermenzing
+Wahlen,Wahlbeteiligung,Stadtratswahl,"48,4",13416,27730,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,6,06 Sendling
+Wahlen,Wahlbeteiligung,Landtagswahl,"58,8",17757,30212,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,20,20 Hadern
+Wahlen,Wahlbeteiligung,Landtagswahl,"58,4",19705,33755,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,18,18 Untergiesing - Harlaching
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"47,6",23057,48478,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,4,04 Schwabing - West
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"47,7",18224,38226,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,7,07 Sendling - Westpark
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"56,4",11695,20754,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,23,23 Allach - Untermenzing
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"49,3",32086,65124,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,9,09 Neuhausen - Nymphenburg
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"51,2",16884,32968,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,20,20 Hadern
+Wahlen,Wahlbeteiligung,Stadtratswahl,"43,7",12181,27893,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,14,14 Berg am Laim
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"44,6",21491,48136,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,12,12 Schwabing - Freimann
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"48,1",7318,15202,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,1,01 Altstadt - Lehel
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"45,7",31858,69721,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,16,16 Ramersdorf - Perlach
+Wahlen,Wahlbeteiligung,Stadtratswahl,"47,7",20044,42007,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,5,05 Au - Haidhausen
+Wahlen,Wahlbeteiligung,Stadtratswahl,"51,5",21035,40821,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,15,15 Trudering - Riem
+Wahlen,Wahlbeteiligung,Stadtratswahl,"43,5",16529,38001,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,3,03 Maxvorstadt
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"51,0",31804,62400,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,19,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"43,6",7769,17811,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,8,08 Schwanthalerhöhe
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"43,7",12180,27893,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,14,14 Berg am Laim
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"46,3",15692,33870,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,10,10 Moosach
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"53,7",25807,48088,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,21,21 Pasing - Obermenzing
+Wahlen,Wahlbeteiligung,Stadtratswahl,"49,3",32089,65124,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,9,09 Neuhausen - Nymphenburg
+Wahlen,Wahlbeteiligung,Stadtratswahl,"43,6",7767,17811,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,8,08 Schwanthalerhöhe
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"51,3",14032,27359,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,22,22 Aubing - Lochhausen - Langwied
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"42,8",14715,34342,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,17,17 Obergiesing
+Wahlen,Wahlbeteiligung,Oberbürgermeisterwahl,"45,0",16842,37386,,,,Wähler_innen bei der Oberbürgermeisterwahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,24,24 Feldmoching - Hasenbergl
+Wahlen,Wahlbeteiligung,Stadtratswahl,"53,7",25806,48088,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,21,21 Pasing - Obermenzing
+Wahlen,Wahlbeteiligung,Stadtratswahl,"45,7",31856,69721,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,16,16 Ramersdorf - Perlach
+Wahlen,Wahlbeteiligung,Landtagswahl,"58,8",7785,13241,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,1,01 Altstadt - Lehel
+Wahlen,Wahlbeteiligung,Landtagswahl,"58,0",21592,37218,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,5,05 Au - Haidhausen
+Wahlen,Wahlbeteiligung,Landtagswahl,"59,0",25390,43069,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,4,04 Schwabing - West
+Wahlen,Wahlbeteiligung,Landtagswahl,"59,0",34644,58684,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,9,09 Neuhausen - Nymphenburg
+Wahlen,Wahlbeteiligung,Landtagswahl,"60,8",32288,53077,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,13,13 Bogenhausen
+Wahlen,Wahlbeteiligung,Landtagswahl,"48,6",17575,36179,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,11,11 Milbertshofen - Am Hart
+Wahlen,Wahlbeteiligung,Landtagswahl,"58,2",14864,25521,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,22,22 Aubing - Lochhausen - Langwied
+Wahlen,Wahlbeteiligung,Stadtratswahl,"49,0",18427,37638,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,18,18 Untergiesing - Harlaching
+Wahlen,Wahlbeteiligung,Stadtratswahl,"48,1",7316,15202,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,1,01 Altstadt - Lehel
+Wahlen,Wahlbeteiligung,Stadtratswahl,"56,4",11695,20754,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,23,23 Allach - Untermenzing
+Wahlen,Wahlbeteiligung,Stadtratswahl,"45,0",16833,37386,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,24,24 Feldmoching - Hasenbergl
+Wahlen,Wahlbeteiligung,Landtagswahl,"57,0",13843,24272,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,6,06 Sendling
+Wahlen,Wahlbeteiligung,Stadtratswahl,"38,9",17079,43865,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,11,11 Milbertshofen - Am Hart
+Wahlen,Wahlbeteiligung,Stadtratswahl,"45,6",16017,35098,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,2,02 Ludwigsvorstadt - Isarvorstadt
+Wahlen,Wahlbeteiligung,Stadtratswahl,"42,8",14713,34342,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,17,17 Obergiesing
+Wahlen,Wahlbeteiligung,Stadtratswahl,"51,3",14026,27359,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,22,22 Aubing - Lochhausen - Langwied
+Wahlen,Wahlbeteiligung,Landtagswahl,"55,7",19104,34298,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,7,07 Sendling - Westpark
+Wahlen,Wahlbeteiligung,Landtagswahl,"60,1",34169,56855,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,19,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+Wahlen,Wahlbeteiligung,Landtagswahl,"56,4",16886,29939,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,2,02 Ludwigsvorstadt - Isarvorstadt
+Wahlen,Wahlbeteiligung,Landtagswahl,"56,1",23608,42117,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,12,12 Schwabing - Freimann
+Wahlen,Wahlbeteiligung,Stadtratswahl,"47,3",17930,37943,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,25,25 Laim
+Wahlen,Wahlbeteiligung,Stadtratswahl,"47,6",471553,989782,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Gesamtstadt,#100,Stadt München
+Wahlen,Wahlbeteiligung,Stadtratswahl,"51,2",16881,32968,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,20,20 Hadern
+Wahlen,Wahlbeteiligung,Stadtratswahl,"47,7",18225,38226,,,,Wähler_innen bei der Stadtratswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,7,07 Sendling - Westpark
+Wahlen,Wahlbeteiligung,Landtagswahl,"52,6",17418,33114,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,24,24 Feldmoching - Hasenbergl
+Wahlen,Wahlbeteiligung,Landtagswahl,"55,3",19149,34650,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,25,25 Laim
+Wahlen,Wahlbeteiligung,Landtagswahl,"60,6",22936,37865,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,15,15 Trudering - Riem
+Wahlen,Wahlbeteiligung,Landtagswahl,"61,5",12078,19629,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,23,23 Allach - Untermenzing
+Wahlen,Wahlbeteiligung,Landtagswahl,"52,5",7748,14761,,,,Wähler_innen bei der Landtagswahl,alle Wahlberechtigte,,,,2008,Stadtbezirk,8,08 Schwanthalerhöhe
+Wahlen,Wahlbeteiligung,Bundestagswahl,"76,4",26135,34222,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,3,03 Maxvorstadt
+Wahlen,Wahlbeteiligung,Bundestagswahl,"73,9",31762,42957,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,12,12 Schwabing - Freimann
+Wahlen,Wahlbeteiligung,Bundestagswahl,"71,5",24814,34683,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,7,07 Sendling - Westpark
+Wahlen,Wahlbeteiligung,Bundestagswahl,"69,1",43033,62274,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,16,16 Ramersdorf - Perlach
+Wahlen,Wahlbeteiligung,Bundestagswahl,"77,8",10376,13343,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,1,01 Altstadt - Lehel
+Wahlen,Wahlbeteiligung,Europawahl,"39,6",24815,62605,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,16,16 Ramersdorf - Perlach
+Wahlen,Wahlbeteiligung,Europawahl,"41,2",6329,15372,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,8,08 Schwanthalerhöhe
+Wahlen,Wahlbeteiligung,Bundestagswahl,"66,8",22107,33114,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,24,24 Feldmoching - Hasenbergl
+Wahlen,Wahlbeteiligung,Bundestagswahl,"64,4",23542,36549,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,11,11 Milbertshofen - Am Hart
+Wahlen,Wahlbeteiligung,Europawahl,"41,8",10764,25765,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,22,22 Aubing - Lochhausen - Langwied
+Wahlen,Wahlbeteiligung,Europawahl,"41,9",14746,35175,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,25,25 Laim
+Wahlen,Wahlbeteiligung,Europawahl,"36,6",12129,33166,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,24,24 Feldmoching - Hasenbergl
+Wahlen,Wahlbeteiligung,Bundestagswahl,"75,6",28632,37849,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,5,05 Au - Haidhausen
+Wahlen,Wahlbeteiligung,Europawahl,"36,0",13196,36674,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,11,11 Milbertshofen - Am Hart
+Wahlen,Wahlbeteiligung,Europawahl,"39,2",9797,24978,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,14,14 Berg am Laim
+Wahlen,Wahlbeteiligung,Europawahl,"45,3",8954,19759,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,23,23 Allach - Untermenzing
+Wahlen,Wahlbeteiligung,Europawahl,"43,2",387606,896685,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Gesamtstadt,#100,Stadt München
+Wahlen,Wahlbeteiligung,Europawahl,"44,9",13817,30767,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,2,02 Ludwigsvorstadt - Isarvorstadt
+Wahlen,Wahlbeteiligung,Europawahl,"46,5",20447,43961,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,4,04 Schwabing - West
+Wahlen,Wahlbeteiligung,Europawahl,"44,3",15227,34358,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,18,18 Untergiesing - Harlaching
+Wahlen,Wahlbeteiligung,Bundestagswahl,"72,4",18599,25703,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,22,22 Aubing - Lochhausen - Langwied
+Wahlen,Wahlbeteiligung,Bundestagswahl,"76,7",29984,39094,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,15,15 Trudering - Riem
+Wahlen,Wahlbeteiligung,Europawahl,"43,1",18552,43052,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,12,12 Schwabing - Freimann
+Wahlen,Wahlbeteiligung,Bundestagswahl,"75,8",45514,60045,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,9,09 Neuhausen - Nymphenburg
+Wahlen,Wahlbeteiligung,Bundestagswahl,"75,9",23271,30646,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,2,02 Ludwigsvorstadt - Isarvorstadt
+Wahlen,Wahlbeteiligung,Bundestagswahl,"73,4",657183,895087,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Gesamtstadt,#100,Stadt München
+Wahlen,Wahlbeteiligung,Bundestagswahl,"74,2",22751,30650,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,20,20 Hadern
+Wahlen,Wahlbeteiligung,Bundestagswahl,"71,3",10989,15413,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,8,08 Schwanthalerhöhe
+Wahlen,Wahlbeteiligung,Bundestagswahl,"76,3",15054,19735,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,23,23 Allach - Untermenzing
+Wahlen,Wahlbeteiligung,Bundestagswahl,"76,5",33519,43805,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,4,04 Schwabing - West
+Wahlen,Wahlbeteiligung,Bundestagswahl,"69,6",20980,30136,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,10,10 Moosach
+Wahlen,Wahlbeteiligung,Bundestagswahl,"71,7",25158,35084,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,25,25 Laim
+Wahlen,Wahlbeteiligung,Europawahl,"47,4",21302,44976,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,21,21 Pasing - Obermenzing
+Wahlen,Wahlbeteiligung,Bundestagswahl,"77,2",41389,53581,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,13,13 Bogenhausen
+Wahlen,Wahlbeteiligung,Bundestagswahl,"68,0",16920,24871,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,14,14 Berg am Laim
+Wahlen,Wahlbeteiligung,Europawahl,"39,0",11662,29906,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,17,17 Obergiesing
+Wahlen,Wahlbeteiligung,Europawahl,"46,2",24835,53712,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,13,13 Bogenhausen
+Wahlen,Wahlbeteiligung,Europawahl,"46,8",6252,13372,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,1,01 Altstadt - Lehel
+Wahlen,Wahlbeteiligung,Europawahl,"46,0",27560,59975,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,9,09 Neuhausen - Nymphenburg
+Wahlen,Wahlbeteiligung,Europawahl,"46,0",26420,57384,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,19,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+Wahlen,Wahlbeteiligung,Bundestagswahl,"74,4",18470,24836,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,6,06 Sendling
+Wahlen,Wahlbeteiligung,Bundestagswahl,"75,7",43381,57296,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,19,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+Wahlen,Wahlbeteiligung,Europawahl,"44,3",17242,38905,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,15,15 Trudering - Riem
+Wahlen,Wahlbeteiligung,Europawahl,"41,7",14498,34805,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,7,07 Sendling - Westpark
+Wahlen,Wahlbeteiligung,Bundestagswahl,"74,5",25535,34264,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,18,18 Untergiesing - Harlaching
+Wahlen,Wahlbeteiligung,Bundestagswahl,"69,3",20715,29886,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,17,17 Obergiesing
+Wahlen,Wahlbeteiligung,Bundestagswahl,"76,7",34553,45051,,,,Wähler_innen bei der Bundestagswahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,21,21 Pasing - Obermenzing
+Wahlen,Wahlbeteiligung,Europawahl,"38,9",11790,30286,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,10,10 Moosach
+Wahlen,Wahlbeteiligung,Europawahl,"45,1",15465,34284,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,3,03 Maxvorstadt
+Wahlen,Wahlbeteiligung,Europawahl,"44,5",11041,24809,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,6,06 Sendling
+Wahlen,Wahlbeteiligung,Europawahl,"45,1",17114,37972,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,5,05 Au - Haidhausen
+Wahlen,Wahlbeteiligung,Europawahl,"44,5",13652,30667,,,,Wähler_innen bei der Europawahl,alle Wahlberechtigte,,,,2009,Stadtbezirk,20,20 Hadern
