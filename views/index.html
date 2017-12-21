@@ -41,13 +41,18 @@
             <img class="play-button" id="play-button-main" src="/public/images/play-button.svg">
         </div>
     </div>
+    <script type="text/javascript">
+    function dirty_rslider_onchange_fix() {
+        $(".rs-scale span:last-child").css({ width: "0" });
+    }
+    </script>
     <script type="text/javascript" src="/public/js/vendor/jquery.js"></script>
     <script type="text/javascript" src="/public/js/vendor/what-input.js"></script>
     <script type="text/javascript" src="/public/js/vendor/foundation.js"></script>
     <script type="text/javascript" src="/public/js/app.js"></script>
     <script type="text/javascript" src="/public/js/vendor/d3.v3.min.js"></script>
     <script type="text/javascript" src="/public/js/vendor/d3-geo.min.js"></script>
-    <script type="text/javascript" src="/public/js/vendor/rSlider.min.js"></script>
+    <script type="text/javascript" src="/public/js/vendor/rSlider.js"></script>
     <script type="text/javascript" src="/public/js/utils.js"></script>
     <script type="text/javascript" src="/public/js/index.js"></script>
     <script type="text/javascript" src="http://localhost:35729/livereload.js?LR-verbose&snipver=1&LiveTest=1"></script>

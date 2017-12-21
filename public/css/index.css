@@ -39,9 +39,9 @@ p#district-name-box {
 
 div.content-main {
     /*background-color: #97e1b3;*/
-    padding: 1%;
+    /*padding: 1%;*/
     display: flex;
-    flex: 0 1 80%;
+    flex: 0 1 75%;
     align-items: center;
     justify-content: center;
 }
@@ -51,7 +51,7 @@ div.footer {
     align-content: center;
     justify-content: center;
     display: flex;
-    flex: 1 1 10%;
+    flex: 1 1 15%;
     flex-flow: column;
 }
 
@@ -78,7 +78,7 @@ div.tooltip {
     pointer-events: none;
 }
 
-.modalChart{
+.modalChart {
     margin: 0 auto;
     display: block;
 }
@@ -107,4 +107,8 @@ div.tooltip {
     display: block;
     width: 3%;
     cursor: pointer;
+}
+
+#play-button-main {
+    padding-top: 1%;
 }

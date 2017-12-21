@@ -19,27 +19,20 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
         let height = 600;
 
         var projection = d3.geoMercator()
-            .scale(140000)
+            .scale(120000)
             .center([11.53, 48.180]);
 
         var path = d3.geoPath().projection(projection);
 
         var svg = d3.select("#map-container")
             .append("svg")
-            .attr("height", "700")
+            .attr("height", "650")
             .attr("width", "1000")
             .attr("id", "svg-map")
             .append("g");
 
         function show_tooltip() {
-            var district_name = $(this).data("name");
-
-            // $(".tooltip")
-            //     .html(district_name)
-            //     .css("left", d3.event.pageX + "px")
-            //     .css("top", (d3.event.pageY - 28) + "px")
-            //     .show();
-            $("#district-name-box").html(district_name)
+            $("#district-name-box").html($(this).data("name"))
         }
 
         function add_district() {
@@ -233,12 +226,14 @@ var slider_modal_ranges = [2002, 2003, 2005, 2008, 2009];
                 width: "600"
             });
 
-            jQuery.extend(
-                slider_modal,
-                my_modal
+            jQuery.extend(slider_modal, my_modal);
+            $("#footer-modal > #play-button-modal").bind(
+                "click",
+                change_slider.bind(null, slider_modal, slider_modal_active)
             );
-            $("#footer-modal > #play-button-modal")
-                .bind("click", change_slider.bind(null, slider_modal, slider_modal_active));
+
+            //fix position of modal after load
+            $("#exampleModal").css({top: "2%"});
         }
 
         function set_modal_title() {
